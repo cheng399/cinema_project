@@ -1,0 +1,115 @@
+$color:#f99135;
+#main {
+    .header {
+        div {
+            &::after {
+                width: 100%;
+            }
+            span:nth-child(3),
+            span:nth-child(4) {
+                background-color: $color;
+                &::after {
+                    color: #ffbb7f;
+                }
+            }
+        }
+    }
+    // 支付成功
+    .countdown {
+        overflow: hidden;
+        padding-left: 80px;
+        height: 100px;
+        background: url(../images/yes.png) no-repeat 20px center;
+        background-color: #fff3f3;
+        p {
+            margin: 30px 0 5px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+    // 影片详情
+    .sessions {
+        margin: 40px 0;
+        >p {
+            height: 30px;
+            line-height: 30px;
+            text-indent: 15px;
+            font-size: 12px;
+            background: url(../images/gth.png) no-repeat left center;
+        }
+        .order {
+            border: 1px solid #ddd;
+            .order-top {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 20px;
+                background-color: #eee;
+                p {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    color: #999;
+                }
+                .time {
+                    padding-right: 30px;
+                    color: #333;
+                }
+                .delete {
+                    width: 20px;
+                    height: 20px;
+                    background: url(../images/sc.png) no-repeat center;
+                }
+            }
+            .details {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                .movie {
+                    display: flex;
+                    div {
+                        margin-left: 15px;
+                    }
+                    img {
+                        height: 85px;
+                        box-shadow: 0 0 5px 1px #e1e1e1;
+                    }
+                    h6 {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 16px;
+                    }
+                    p {
+                        height: 18px;
+                        line-height: 18px;
+                        color: #999;
+                        font-size: 12px;
+                    }
+                    .seat {
+                        margin-right: 5px;
+                    }
+                    .time {
+                        color: #FA9136;
+                        font-size: 12px;
+                    }
+                }
+                >span {
+                    font-size: 14px;
+                }
+                button {
+                    width: 80px;
+                    height: 30px;
+                    text-align: center;
+                    background-color: #FA9136;
+                    border-radius: 20px;
+                    color: white;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

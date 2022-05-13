@@ -1,0 +1,312 @@
+#header {
+  border-bottom: 2px solid #FA9136;
+  min-width: 1200px;
+}
+
+#header .h-top {
+  height: 40px;
+  line-height: 40px;
+  background-color: #f0f0f0;
+}
+
+#header .h-top .w a {
+  color: #aaa;
+  cursor: pointer;
+}
+
+#header .h-top .w .exit {
+  display: none;
+}
+
+#header .h-top .w span {
+  padding: 0 10px;
+  color: #aaa;
+}
+
+#header .h-top .shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+}
+
+#header .h-top .shade > div {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#header .h-top .shade > div .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  text-indent: 20px;
+  font-size: 40px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 100%;
+  cursor: pointer;
+}
+
+#header .h-top .shade_content {
+  padding: 30px;
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+}
+
+#header .h-top .shade_content .content_head {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #ddd;
+}
+
+#header .h-top .shade_content .content_head span {
+  padding: 0 7px 8px;
+}
+
+#header .h-top .shade_content .active {
+  color: #000;
+  font-weight: 700;
+  border-bottom: 4px solid #FA9136;
+}
+
+#header .h-top .content_main {
+  margin-top: 30px;
+}
+
+#header .h-top .content_main > div {
+  height: 100%;
+}
+
+#header .h-top .content_main > div .eyes {
+  position: relative;
+}
+
+#header .h-top .content_main > div .eyes img {
+  position: absolute;
+  top: 33%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 25px;
+}
+
+#header .h-top .content_main > div input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  text-indent: 1em;
+  color: #666;
+}
+
+#header .h-top .content_main > div input::placeholder {
+  font-size: 13px;
+}
+
+#header .h-top .content_main > div p {
+  height: 25px;
+  line-height: 25px;
+  color: #f00;
+  font-size: 12px;
+}
+
+#header .h-top .content_main > div button {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #FA9136;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#header .h-top .content_main .item-box {
+  margin: 10px 0;
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+  border-bottom: 1px solid #ccc;
+}
+
+#header .h-top .content_main .item-box input {
+  margin-right: 5px;
+  width: 15px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#header .h-top .content_main .item-box .fr {
+  margin: 0;
+}
+
+#header .h-top .content_main .agree {
+  border-bottom: none;
+}
+
+#header .h-top .content_main .agree input {
+  width: 12px;
+}
+
+#header .h-top .content_main .agree a {
+  font-size: 12px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+#header .h-top .content_main .fr {
+  margin-top: 15px;
+  color: #FA9136;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#header .h-bottom {
+  height: 90px;
+  line-height: 90px;
+}
+
+#header .h-bottom > div {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  height: 100%;
+}
+
+#header .h-bottom h1 {
+  height: 100%;
+  text-align: right;
+}
+
+#header .h-bottom h1 a {
+  margin-right: 15px;
+  display: inline-block;
+  width: 169px;
+  height: 50px;
+  background: url(../images/logo.png);
+  vertical-align: middle;
+}
+
+#header .h-bottom h1 select {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+#header .h-bottom ul {
+  margin: 0 50px;
+  flex: 1;
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#header .h-bottom ul li {
+  flex: 1;
+  transition: all .3s;
+}
+
+#header .h-bottom ul li a {
+  font-size: 18px;
+  color: inherit;
+}
+
+#header .h-bottom ul .active {
+  color: #fff;
+  background-color: #FA9136;
+}
+
+#header .h-bottom .fr input {
+  text-indent: 20px;
+  width: 270px;
+  height: 44px;
+  border: 2px solid #FA9136;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 16px;
+}
+
+#header .h-bottom .fr input::placeholder {
+  color: #aaa;
+}
+
+#header .h-bottom .fr button {
+  margin-left: -30px;
+  width: 70px;
+  height: 44px;
+  border-radius: 20px;
+  background: url(../images/btn-search.png) no-repeat center;
+  background-color: #FA9136;
+  cursor: pointer;
+}
+
+#main {
+  overflow: hidden;
+  min-width: 1200px;
+  min-height: 360px;
+}
+
+#footer {
+  min-width: 1200px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #262427;
+}
+
+#footer .f-top {
+  display: flex;
+}
+
+#footer dl {
+  margin: 20px 75px;
+}
+
+#footer dl dt {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#footer dl dt::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #FA9136;
+}
+
+#footer dl dd {
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+}
+
+#footer .f-bottom {
+  padding: 13px 0 10px;
+  text-align: center;
+  border-top: 2px solid #555;
+}
+
+#footer .f-bottom p {
+  height: 22px;
+}
+
+#footer .f-bottom p span {
+  padding: 0 10px;
+}

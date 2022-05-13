@@ -1,0 +1,281 @@
+$color:#FA9136;
+// 头部样式
+#header {
+    border-bottom: 2px solid $color;
+    min-width: 1200px;
+    .h-top {
+        height: 40px;
+        line-height: 40px;
+        background-color: #f0f0f0;
+        .w {
+            a {
+                color: #aaa;
+                cursor: pointer;
+            }
+            .exit {
+                display: none;
+            }
+            span {
+                padding: 0 10px;
+                color: #aaa;
+            }
+        }
+        // 登录注册模块样式
+        .shade {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            width: 100vw;
+            height: 100vh;
+            &>div {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                padding: 10px;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0, 0, 0, .2);
+                // 关闭按钮
+                .close {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 1;
+                    text-indent: 20px;
+                    font-size: 40px;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, .3);
+                    border-bottom-left-radius: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+        .shade_content {
+            padding: 30px;
+            width: 350px;
+            height: 400px;
+            background-color: #fff;
+            // 头部
+            .content_head {
+                height: 40px;
+                line-height: 40px;
+                border-bottom: 2px solid #ddd;
+                span {
+                    padding: 0 7px 8px;
+                }
+            }
+            .active {
+                color: #000;
+                font-weight: 700;
+                border-bottom: 4px solid $color;
+            }
+        }
+        .content_main {
+            margin-top: 30px;
+            &>div {
+                height: 100%;
+                .eyes {
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: 33%;
+                        transform: translateY(-50%);
+                        right: 10px;
+                        width: 25px;
+                    }
+                }
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    background-color: #f4f4f4;
+                    text-indent: 1em;
+                    color: #666;
+                    &::placeholder {
+                        font-size: 13px;
+                    }
+                }
+                p {
+                    height: 25px;
+                    line-height: 25px;
+                    color: #f00;
+                    font-size: 12px;
+                }
+                button {
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 30px;
+                    color: #fff;
+                    font-size: 16px;
+                    background-color: $color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+            .item-box {
+                margin: 10px 0;
+                height: 50px;
+                line-height: 50px;
+                color: #999;
+                border-bottom: 1px solid #ccc;
+                input {
+                    margin-right: 5px;
+                    width: 15px;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+                .fr {
+                    margin: 0;
+                }
+            }
+            .agree {
+                border-bottom: none;
+                input {
+                    width: 12px;
+                }
+                a {
+                    font-size: 12px;
+                    color: #aaa;
+                    cursor: pointer;
+                }
+            }
+            .fr {
+                margin-top: 15px;
+                color: $color;
+                font-size: 13px;
+                cursor: pointer;
+                font-weight: 700;
+            }
+        }
+        // 登录注册模块结束
+    }
+    .h-bottom {
+        height: 90px;
+        line-height: 90px;
+        &>div {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            height: 100%;
+        }
+        // logo
+        h1 {
+            height: 100%;
+            text-align: right;
+            a {
+                margin-right: 15px;
+                display: inline-block;
+                width: 169px;
+                height: 50px;
+                background: url(../images/logo.png);
+                vertical-align: middle;
+            }
+            select {
+                outline: none;
+                background-color: transparent;
+                border: none;
+                font-size: 16px;
+            }
+        }
+        // 列表项
+        ul {
+            margin: 0 50px;
+            flex: 1;
+            float: left;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            li {
+                flex: 1;
+                transition: all .3s;
+                a {
+                    font-size: 18px;
+                    color: inherit;
+                }
+            }
+            .active {
+                color: #fff;
+                background-color: $color;
+            }
+        }
+        // 搜索框
+        .fr {
+            input {
+                text-indent: 20px;
+                width: 270px;
+                height: 44px;
+                border: 2px solid $color;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                font-size: 16px;
+                &::placeholder {
+                    color: #aaa;
+                }
+            }
+            button {
+                margin-left: -30px;
+                width: 70px;
+                height: 44px;
+                border-radius: 20px;
+                background: url(../images/btn-search.png) no-repeat center;
+                background-color: $color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// 页面主体内容样式
+#main {
+    overflow: hidden;
+    min-width: 1200px;
+    min-height: 360px;
+}
+
+// 底部样式
+#footer {
+    min-width: 1200px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #262427;
+    .f-top {
+        display: flex;
+    }
+    dl {
+        margin: 20px 75px;
+        dt {
+            position: relative;
+            margin-bottom: 20px;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 70%;
+                height: 4px;
+                border-radius: 2px;
+                background-color: $color;
+            }
+        }
+        dd {
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+        }
+    }
+    .f-bottom {
+        padding: 13px 0 10px;
+        text-align: center;
+        border-top: 2px solid #555;
+        p {
+            height: 22px;
+            span {
+                padding: 0 10px;
+            }
+        }
+    }
+}

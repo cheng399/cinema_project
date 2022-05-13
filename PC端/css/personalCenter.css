@@ -1,0 +1,295 @@
+@charset "UTF-8";
+#main {
+  margin: 30px 0 60px;
+}
+
+#main .w {
+  display: flex;
+  border: 1px solid #ccc;
+  min-height: 400px;
+}
+
+#main .w .main_left {
+  width: 200px;
+  background-color: #f3f3f3;
+}
+
+#main .w .main_left p {
+  margin: 45px 0 32px;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+}
+
+#main .w .main_left ul li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#main .w .main_left ul .active {
+  background-color: #FA9136;
+  color: #fff;
+}
+
+#main .w .main_right {
+  padding-bottom: 150px;
+  flex: 1;
+}
+
+#main .w .main_right > div {
+  padding: 0 38px;
+}
+
+#main .w .main_right > div > .title {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  font-size: 18px;
+  color: #FA9136;
+  border-bottom: 1px solid #ccc;
+}
+
+#main #myOrder .order {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+#main #myOrder .order .order-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #eee;
+}
+
+#main #myOrder .order .order-top p {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+#main #myOrder .order .order-top .time {
+  padding-right: 30px;
+  color: #333;
+}
+
+#main #myOrder .order .order-top .delete {
+  width: 20px;
+  height: 20px;
+  background: url(../images/sc.png) no-repeat center;
+}
+
+#main #myOrder .order .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#main #myOrder .order .details .movie {
+  min-width: 350px;
+  display: flex;
+}
+
+#main #myOrder .order .details .movie div {
+  margin-left: 15px;
+}
+
+#main #myOrder .order .details .movie img {
+  height: 85px;
+  box-shadow: 0 0 5px 1px #e1e1e1;
+}
+
+#main #myOrder .order .details .movie h6 {
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+#main #myOrder .order .details .movie p {
+  height: 18px;
+  line-height: 18px;
+  color: #999;
+  font-size: 12px;
+}
+
+#main #myOrder .order .details .movie .seat {
+  margin-right: 5px;
+}
+
+#main #myOrder .order .details .movie .time {
+  color: #FA9136;
+  font-size: 12px;
+}
+
+#main #myOrder .order .details > span {
+  font-size: 14px;
+}
+
+#main #myOrder .order .details button {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  background-color: #FA9136;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#main #myOrder .order .details .payed {
+  top: -10px;
+}
+
+#main #myOrder .order .details .payed::before, #main #myOrder .order .details .payed::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#main #myOrder .order .details .payed::before {
+  content: '付款';
+  line-height: 30px;
+  color: white;
+}
+
+#main #myOrder .order .details .payed::after {
+  content: '查看详情';
+  font-size: 14px;
+  line-height: 90px;
+}
+
+#main #myOrder .order .details .take::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '取票';
+  line-height: 30px;
+  color: white;
+}
+
+#main #information .inf-bottom {
+  display: flex;
+}
+
+#main #information .headportrait {
+  width: 260px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main #information .headportrait img {
+  width: 260px;
+  height: 260px;
+}
+
+#main #information .headportrait button {
+  width: 180px;
+  height: 56px;
+  border-radius: 10px;
+}
+
+#main #information .headportrait p {
+  text-align: center;
+  color: #999;
+}
+
+#main #information table {
+  flex: 1;
+}
+
+#main #information table td:first-child {
+  text-align: right;
+}
+
+#main #information table input[type=text] {
+  width: 250px;
+  height: 30px;
+  text-indent: 10px;
+  border: 2px solid #ccc;
+}
+
+#main #information table input[type=text]::placeholder {
+  color: #333;
+}
+
+#main #information table label {
+  padding: 0 10px 0 5px;
+  cursor: pointer;
+}
+
+#main #information table select {
+  height: 30px;
+  outline: none;
+  text-indent: 10px;
+  border: 2px solid #ccc;
+}
+
+#main #information table select:first-child {
+  width: 100px;
+}
+
+#main #information table select:last-child {
+  width: 50px;
+}
+
+#main #information table button {
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  background-color: #FA9136;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#main .changepass .eyes {
+  position: relative;
+}
+
+#main .changepass .eyes img {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+#main .changepass td {
+  padding: 10px 0;
+}
+
+#main .changepass td:first-child {
+  text-align: right;
+}
+
+#main .changepass input {
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+}
+
+#main .changepass button {
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  background-color: #FA9136;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#main .changepass p[class$=msg] {
+  color: #f00;
+  text-indent: 10px;
+  font-size: 12px;
+}

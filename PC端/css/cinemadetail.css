@@ -1,0 +1,319 @@
+@charset "UTF-8";
+#main {
+  margin-bottom: 80px;
+}
+
+#main .main-top {
+  background-image: linear-gradient(to top, #392159, #563a55);
+  height: 320px;
+  color: white;
+}
+
+#main .main-top .w {
+  position: relative;
+  display: flex;
+  padding-top: 40px;
+}
+
+#main .main-top img {
+  margin-right: 30px;
+  width: 300px;
+  height: 300px;
+  border: 3px solid white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#main .main-top .main-top-text h5 {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#main .main-top .main-top-text > p {
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#main .main-top .serve {
+  margin-top: 20px;
+}
+
+#main .main-top .serve p {
+  position: relative;
+}
+
+#main .main-top .serve p::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 80px;
+  right: 0;
+  height: 1px;
+  background-color: #999;
+}
+
+#main .main-top .serve ul li {
+  margin: 12px 0;
+  font-size: 12px;
+  height: 15px;
+  line-height: 18px;
+}
+
+#main .main-top .serve ul li::before {
+  display: inline-block;
+  margin-right: 5px;
+  content: '改签';
+  width: 50px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+#main .main-top .serve ul li:nth-child(2)::before {
+  content: '3D眼镜';
+}
+
+#main .main-top .serve ul li:nth-child(3)::before {
+  content: '儿童优惠';
+}
+
+#main .main-top .serve ul li:nth-child(4)::before {
+  content: 'WIFI';
+}
+
+#main .main-top .serve ul li:nth-child(5)::before {
+  content: '可停车';
+}
+
+#main .main-body {
+  margin-top: 70px;
+}
+
+#main .main-body .nav {
+  margin: 25px 0;
+  font-size: 14px;
+}
+
+#main .main-body .nav span {
+  cursor: pointer;
+}
+
+#main .main-body .slideshow {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background-color: #eee;
+}
+
+#main .main-body .slideshow > div {
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+}
+
+#main .main-body .slideshow > div button {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+#main .main-body .slideshow > div .prev {
+  left: 35px;
+  background: url(../images/prev.png) no-repeat;
+}
+
+#main .main-body .slideshow > div .next {
+  right: 35px;
+  background: url(../images/next.png) no-repeat;
+}
+
+#main .main-body .slideshow ul {
+  display: flex;
+}
+
+#main .main-body .slideshow ul li {
+  margin: 0 20px;
+  min-width: 142px;
+  border: 4px solid #fff;
+}
+
+#main .main-body .slideshow ul li img {
+  width: 100%;
+  height: 193px;
+}
+
+#main .main-body .slideshow ul .active {
+  position: relative;
+  transform: scale(1.2);
+  border-color: #FA9136;
+}
+
+#main .main-body .slideshow ul .active::after {
+  position: absolute;
+  content: '';
+  border: 15px solid transparent;
+  border-bottom-color: #fff;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#main .main-body .body-content .con-head h6 {
+  margin: 27px 0;
+}
+
+#main .main-body .body-content .con-head h6 .title {
+  font-size: 22px;
+}
+
+#main .main-body .body-content .con-head h6 i {
+  color: #FA9136;
+}
+
+#main .main-body .body-content .con-head h6 .score {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#main .main-body .body-content .con-head p {
+  padding-bottom: 20px;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+#main .main-body .body-content .con-head p span {
+  margin-right: 30px;
+}
+
+#main .main-body .body-content .con-head p span::before {
+  color: #999;
+  margin-right: 5px;
+}
+
+#main .main-body .body-content .con-head p span:nth-child(1)::before {
+  content: '时长:';
+}
+
+#main .main-body .body-content .con-head p span:nth-child(2)::before {
+  content: '类型:';
+}
+
+#main .main-body .body-content .con-head p span:nth-child(3)::before {
+  content: '主演:';
+}
+
+#main .main-body .body-content .con-head .tab {
+  height: 25px;
+  line-height: 25px;
+  margin: 30px 0;
+  display: flex;
+}
+
+#main .main-body .body-content .con-head .tab::before {
+  margin-right: 20px;
+  content: '观影时间:';
+  color: #999;
+}
+
+#main .main-body .body-content .con-head .tab li {
+  padding: 0 15px;
+  margin-right: 100px;
+  border-radius: 15px;
+}
+
+#main .main-body .body-content .con-head .tab .active {
+  color: #fff;
+  background-color: #FA9136;
+}
+
+#main .main-body .body-content .con-foot {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#main .main-body .body-content .con-foot thead {
+  text-align: center;
+  font-weight: 700;
+  background-color: #f7f7f7;
+  height: 53px;
+}
+
+#main .main-body .body-content .con-foot tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+#main .main-body .body-content .con-foot tbody td {
+  font-size: 14px;
+  height: 82px;
+  text-align: center;
+}
+
+#main .main-body .body-content .con-foot tbody td .time {
+  font-size: 20px;
+}
+
+#main .main-body .body-content .con-foot tbody td .leave {
+  font-size: 12px;
+  color: #999;
+}
+
+#main .main-body .body-content .con-foot tbody td i {
+  color: #f00;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#main .main-body .body-content .con-foot tbody td span {
+  color: #f00;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#main .main-body .body-content .con-foot tbody td button {
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .main-body .body-content .con-foot tbody td .stop {
+  background-color: #ffbb7f;
+}
+
+#main .main-body .body-content .con-foot tbody td .stop::before {
+  content: '停止售票';
+}
+
+#main .main-body .body-content .con-foot tbody td .sell {
+  background-color: #FA9136;
+}
+
+#main .main-body .body-content .con-foot tbody td .sell::before {
+  content: '正在售票';
+}
+
+#map {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #FA9136;
+  transition: all .1s;
+  z-index: 9;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+#map:hover {
+  width: 500px;
+  height: 500px;
+}

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding-bottom: .4rem;
+  background-color: #0b193e;
+}
+
+header button {
+  width: .5rem;
+  height: .6rem;
+  background: url(../images/arrows.png) no-repeat;
+  background-size: 100%;
+}
+
+header h6 {
+  font-size: .5rem;
+}
+
+main {
+  padding: 0 .5rem;
+}
+
+main .film {
+  position: relative;
+  padding: 0 .4rem .4rem;
+  background-size: 100% 100%;
+  background-color: #fff;
+  border-radius: .2rem;
+}
+
+main .film::before, main .film::after {
+  content: '';
+  position: absolute;
+  top: 37%;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background-color: #0b193e;
+}
+
+main .film::before {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+main .film::after {
+  right: 0;
+  transform: translateX(50%);
+}
+
+main .film .movie {
+  margin-left: -0.4rem;
+  padding: .4rem .4rem .6rem;
+  display: flex;
+  width: 100vw;
+  border-bottom: .02rem dashed #000;
+  box-shadow: 0 0rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+main .film .movie img {
+  width: 1.5rem;
+  height: 2.8rem;
+  border-radius: .3rem;
+}
+
+main .film .movie > div {
+  margin-left: .2rem;
+  color: #000;
+  font-size: .32rem;
+}
+
+main .film .movie > div h5 {
+  width: 4rem;
+  margin: .2rem 0;
+  height: .6rem;
+  line-height: .6rem;
+  font-size: .4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .film .movie > div p {
+  width: 4rem;
+  height: .5rem;
+  line-height: .5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .film .movie .seats span {
+  margin-right: .1rem;
+  display: inline-block;
+  color: white;
+  font-size: .2rem;
+  background-color: #4074ff;
+  border-radius: .1rem;
+  width: .5rem;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+}
+
+main .film .code {
+  padding-top: .4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .28rem;
+  height: 5.6rem;
+}
+
+main .film .code div {
+  padding: .1rem;
+  position: relative;
+  text-align: center;
+  border: .12rem solid #000;
+  border-radius: .3rem;
+}
+
+main .film .code div::before, main .film .code div::after {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+}
+
+main .film .code div::before {
+  top: -0.3rem;
+  bottom: -0.3rem;
+  left: 25%;
+  right: 25%;
+}
+
+main .film .code div::after {
+  top: 25%;
+  bottom: 25%;
+  left: -0.3rem;
+  right: -0.3rem;
+}
+
+main .film .code img {
+  position: relative;
+  z-index: 1;
+  width: 2.6rem;
+}
+
+main .film .code span:last-child {
+  font-size: .48rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+main .film .code span:last-child::before {
+  display: block;
+  margin-bottom: .4rem;
+  content: '兑换码';
+  font-size: .24rem;
+  text-align: center;
+}

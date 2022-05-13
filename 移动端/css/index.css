@@ -1,0 +1,209 @@
+#header {
+  margin-bottom: 1.2rem;
+  padding: 1rem 0 0 .5rem;
+}
+
+#header i {
+  width: 30px;
+  height: 30px;
+  margin-right: .3rem;
+  vertical-align: middle;
+  display: inline-block;
+  background: url(../images/home-page.png) no-repeat;
+  background-size: 100%;
+}
+
+#header h5 {
+  padding-bottom: .4rem;
+  font-size: .8rem;
+}
+
+#header .user {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 3.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#header h6 {
+  font-size: .5rem;
+}
+
+#header h6 i {
+  width: .6rem;
+  height: .51rem;
+}
+
+#header .address {
+  padding: 0 .1rem 0 .8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 99%;
+  width: 100vw;
+  height: 1.2rem;
+  background-color: #233052;
+}
+
+#header .address i:first-child {
+  width: .4rem;
+  height: .48rem;
+  background-position-y: -0.38rem;
+}
+
+#header .address span {
+  vertical-align: middle;
+  font-size: .4rem;
+}
+
+#header .address i:last-child {
+  margin-left: .8rem;
+  width: .5rem;
+  height: .24rem;
+  background-position-y: -1.1rem;
+}
+
+#main .item {
+  margin: 0 .4rem;
+}
+
+#main .item h5 {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .4rem;
+}
+
+#main .item h5 a {
+  float: right;
+  color: #333;
+}
+
+#main .item > div {
+  margin: 0 .2rem;
+  overflow: hidden;
+}
+
+#main .ticket .box {
+  display: flex;
+}
+
+#main .ticket .box li {
+  position: relative;
+  margin-right: .5rem;
+  min-width: 4.5rem;
+  height: 2.3rem;
+  background-color: #f3b438;
+  border-radius: .3rem;
+}
+
+#main .ticket .box li::before, #main .ticket .box li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+#main .ticket .box li::before {
+  transform: translateX(-50%);
+}
+
+#main .ticket .box li::after {
+  right: 0;
+  transform: translateX(50%);
+}
+
+#main .ticket .box li div {
+  border-radius: .3rem;
+  padding-left: .4rem;
+  height: 93%;
+  background-color: #0b193f;
+  color: #fff;
+}
+
+#main .ticket .box li div h6 {
+  height: .7rem;
+  line-height: .8rem;
+  font-size: .28rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .ticket .box li div .address {
+  padding-bottom: .41rem;
+  margin-left: -0.4rem;
+  text-indent: .1rem;
+  font-size: .24rem;
+  transform: scale(0.9);
+  color: #ccc;
+  border-bottom: .02rem dashed #ccc;
+}
+
+#main .ticket .box li div .address span:first-child {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .ticket .box li div .code {
+  padding-right: .3rem;
+  display: flex;
+  justify-content: space-between;
+  height: .8rem;
+  line-height: .8rem;
+}
+
+#main .ticket .box li div .code span {
+  font-size: .28rem;
+  color: #f3b438;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+#main .ticket .box li div .code a {
+  font-size: .24rem;
+}
+
+#main .movielist {
+  display: flex;
+}
+
+#main .movielist li {
+  min-width: 2.14rem;
+  max-width: 2.14rem;
+  height: 4rem;
+  margin-right: .3rem;
+}
+
+#main .movielist li .pic,
+#main .movielist li img {
+  width: 100%;
+  height: 3rem;
+  border-radius: .2rem;
+}
+
+#main .movielist li p {
+  padding: 0 .2rem;
+  height: .6rem;
+  line-height: .6rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: .24rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .movielist li i {
+  display: none;
+}

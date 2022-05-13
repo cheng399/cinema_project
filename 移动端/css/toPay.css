@@ -1,0 +1,211 @@
+body {
+  padding-bottom: 0;
+}
+
+#header {
+  position: relative;
+  padding-bottom: 0;
+}
+
+#header button {
+  width: .5rem;
+  height: .6rem;
+  background: url("../images/arrows.png") no-repeat;
+  background-size: 100%;
+}
+
+#header h6 {
+  font-size: .44rem;
+}
+
+#header .movie {
+  position: relative;
+  top: .02rem;
+  margin-top: .4rem;
+  margin-left: -0.4rem;
+  padding: .4rem;
+  display: flex;
+  width: 100vw;
+  background-color: #fff;
+}
+
+#header .movie img {
+  width: 2.4rem;
+  border-radius: .3rem;
+}
+
+#header .movie > div {
+  margin-left: .2rem;
+  color: #000;
+  font-size: .32rem;
+}
+
+#header .movie > div .order {
+  margin-top: .6rem;
+  color: #4073ff;
+}
+
+#header .movie > div h5 {
+  width: 4rem;
+  margin: .2rem 0;
+  height: .6rem;
+  line-height: .6rem;
+  font-size: .44rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#header .movie > div p {
+  width: 4rem;
+  height: .5rem;
+  line-height: .5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#header .movie > div .cinema {
+  color: #999;
+}
+
+#main {
+  border-top: .4rem solid #edf0f9;
+  background-color: #fff;
+  font-size: .32rem;
+  margin-top: .4rem;
+}
+
+#main .seat-msg {
+  padding: .4rem;
+}
+
+#main .seat-msg > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main .seat-msg > div > div {
+  margin-bottom: .6rem;
+  font-weight: 700;
+  display: flex;
+  height: .8rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#main .seat-msg > div > div:last-child {
+  width: 2rem;
+}
+
+#main .seat-msg > div > div i {
+  font-style: normal;
+}
+
+#main .seat-msg .seat > div:first-child span {
+  margin-top: .1rem;
+  margin-right: .1rem;
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+  background-color: #4073ff;
+  border-radius: .1rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: .28rem;
+}
+
+#main .seat-msg .discounts span {
+  color: #f00;
+}
+
+#main .topay {
+  border-top: .4rem solid #edf0f9;
+  padding: .3rem .4rem 0;
+}
+
+#main .topay p {
+  font-weight: 700;
+}
+
+#main .topay p span {
+  float: right;
+}
+
+#main .topay button {
+  margin: .4rem 0;
+  width: 100%;
+  height: 1rem;
+  color: #fff;
+  font-size: .4rem;
+  background-color: #4073ff;
+  border-radius: .14rem;
+}
+
+#pay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: .32rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#pay > div {
+  padding: .4rem .4rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+}
+
+#pay > div .exitpay {
+  font-weight: 700;
+}
+
+#pay > div .exitpay i:first-child {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/arrows1.png") no-repeat;
+  background-size: 100%;
+}
+
+#pay > div .exitpay span {
+  font-size: .36rem;
+}
+
+#pay > div .exitpay i:last-child {
+  font-style: normal;
+  float: right;
+}
+
+#pay > div img {
+  margin: 20px 0;
+  width: 100%;
+}
+
+#pay > div .price {
+  font-weight: 700;
+}
+
+#pay > div .price span {
+  float: right;
+}
+
+#pay button {
+  margin: .4rem 0;
+  width: 100%;
+  height: 1rem;
+  color: #fff;
+  font-size: .4rem;
+  background-color: #4073ff;
+  border-radius: .14rem;
+}

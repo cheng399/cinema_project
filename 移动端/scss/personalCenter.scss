@@ -1,0 +1,54 @@
+#header {
+    padding-left: 0;
+    h6 {
+        padding-left: .5rem;
+        font-size: .5rem;
+    }
+    .user {
+        margin-top: .6rem;
+        text-align: center;
+        font-size: .4rem;
+        img {
+            width: 2.4rem;
+            margin-bottom: .2rem;
+        }
+    }
+}
+
+#main {
+    font-size: .32rem;
+    color: #0b193f;
+    ul {
+        li {
+            position: relative;
+            text-indent: .4rem;
+            height: 1rem;
+            line-height: 1rem;
+            border-bottom: .02rem solid #ccc;
+            &:hover {
+                color: #f00;
+            }
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: .4rem;
+                content: '';
+                width: .2rem;
+                height: .2rem;
+                border-top: .02rem solid #000;
+                border-right: .02rem solid #000;
+                transform: translateY(-50%) rotate(45deg);
+            }
+        }
+        .exit {
+            &::before {
+                content: '退出登录';
+            }
+        }
+        .login {
+            &::before {
+                content: '登录';
+            }
+        }
+    }
+}

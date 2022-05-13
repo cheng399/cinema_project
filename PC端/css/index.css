@@ -1,0 +1,392 @@
+@charset "UTF-8";
+#main {
+  padding-bottom: 50px;
+}
+
+#main .slideshow {
+  position: relative;
+  height: 361px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#main .slideshow .list {
+  position: relative;
+  width: 500%;
+  height: 100%;
+}
+
+#main .slideshow .list li {
+  overflow: hidden;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+}
+
+#main .slideshow .list li img {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main .slideshow .point {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+#main .slideshow .point li {
+  float: left;
+  margin: 0 15px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#main .slideshow .point .active {
+  background-color: orange;
+}
+
+#main .slideshow .prev {
+  left: 50px;
+  border-left: 8px solid;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+#main .slideshow .next {
+  right: 50px;
+  border-right: 8px solid;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+#main .slideshow .prev,
+#main .slideshow .next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-top: 8px solid;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+#main .slideshow .prev:hover,
+#main .slideshow .next:hover {
+  border-color: orange;
+}
+
+#main .home_main_header {
+  margin: 34px 0;
+  height: 42px;
+  line-height: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main .home_main_header > span {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  background-color: #FA9136;
+  border-radius: 21px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#main .home_main_header .option {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  color: #666;
+}
+
+#main .home_main_header .option select {
+  padding-left: 40px;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  outline: none;
+  background: url(../images/sprite.png) no-repeat 5px 5px;
+}
+
+#main .home_main_header .option select:nth-child(2) {
+  background-position-y: -30px;
+}
+
+#main .home_main_header .option select:nth-child(3) {
+  background-position-y: -67px;
+}
+
+#main .home_main_header .option select:nth-child(4) {
+  background-position-y: -103px;
+}
+
+#main .home_main_left {
+  width: 730px;
+}
+
+#main .movielist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#main .movielist .loading {
+  width: 100%;
+}
+
+#main .movielist li {
+  margin-bottom: 30px;
+  width: 162px;
+  border: 1px solid #ccc;
+}
+
+#main .movielist li .pic {
+  position: relative;
+  cursor: pointer;
+}
+
+#main .movielist li .pic:hover::after {
+  opacity: 1;
+}
+
+#main .movielist li .pic::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  content: '立即购票';
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  background-color: #fa9136bb;
+  transition: all .5s;
+}
+
+#main .movielist li img {
+  width: 100%;
+  height: 220px;
+}
+
+#main .movielist li p {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+#main .movielist li .title {
+  display: inline-block;
+  width: 100px;
+  color: #033;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: MicrosoftYaHei;
+}
+
+#main .movielist li .score {
+  color: #FA9136;
+}
+
+#main .home_main_right {
+  width: 360px;
+}
+
+#main .home_main_right .activity div.top {
+  display: flex;
+  margin-bottom: 20px;
+  height: 196px;
+  border: 1px solid #ccc;
+}
+
+#main .home_main_right .activity div.top .pic {
+  min-width: 139px;
+  height: 100%;
+}
+
+#main .home_main_right .activity div.top .pic img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .home_main_right .activity div.top .txt {
+  padding: 65px 10px 55px;
+  flex: 1;
+}
+
+#main .home_main_right .activity div.top .txt h5 {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .home_main_right .activity div.top .txt p {
+  height: 28px;
+  line-height: 28px;
+}
+
+#main .home_main_right .activity div.top .txt .time {
+  font-size: 16px;
+  color: #999;
+}
+
+#main .home_main_right .activity div.top .txt .see {
+  font-size: 14px;
+  color: #f99135;
+}
+
+#main .home_main_right .activity ul.bottom {
+  overflow: hidden;
+}
+
+#main .home_main_right .activity ul.bottom li {
+  padding-bottom: 20px;
+  width: 170px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+}
+
+#main .home_main_right .activity ul.bottom div {
+  height: 94px;
+  overflow: hidden;
+}
+
+#main .home_main_right .activity ul.bottom img {
+  width: 100%;
+}
+
+#main .home_main_right .activity ul.bottom p {
+  padding: 0 5px 0 10px;
+}
+
+#main .home_main_right .activity ul.bottom .title {
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .home_main_right .activity ul.bottom .time {
+  font-size: 14px;
+  color: #999;
+}
+
+#main .home_main_right .hots .first {
+  position: relative;
+  margin-bottom: 10px;
+  height: 68px;
+}
+
+#main .home_main_right .hots .first:hover a {
+  color: #FA9136;
+}
+
+#main .home_main_right .hots .first .pic {
+  float: left;
+  width: 120px;
+  height: 100%;
+  padding-right: 15px;
+  overflow: hidden;
+}
+
+#main .home_main_right .hots .first img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .home_main_right .hots .first i {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #FA9136;
+}
+
+#main .home_main_right .hots .first .txt {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#main .home_main_right .hots .first p {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本的行数 */
+  -webkit-line-clamp: 3;
+  /* 设置或检索伸缩盒对象的子元素的排列方式 */
+  -webkit-box-orient: vertical;
+}
+
+#main .home_main_right .hots a {
+  color: #000;
+}
+
+#main .home_main_right .hots ul li {
+  position: relative;
+  padding-left: 30px;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .home_main_right .hots ul li:hover a,
+#main .home_main_right .hots ul li:hover i {
+  color: #FA9136;
+}
+
+#main .home_main_right .hots ul li i {
+  position: absolute;
+  left: 8px;
+  color: #ccc;
+}
+
+#main .home_main_right .hots ul li:nth-child(-n+2) i {
+  color: #FA9136;
+}
+
+#main div.head {
+  overflow: hidden;
+  color: #FA9136;
+  height: 72px;
+  line-height: 72px;
+}
+
+#main div.head h4 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+#main div.head h4 span {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+#main div.head .more {
+  font-weight: 700;
+  color: inherit;
+}

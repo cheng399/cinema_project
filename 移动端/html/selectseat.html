@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+    <title>选座</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="../css/selectseat.min.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/getData.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../../js/selectseat.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <button class="back"></button>
+        <h6>选座</h6>
+        <div class="screen"></div>
+        <div class="content-seat">
+            <ul class="seat">
+                <li><span>A1</span>
+                    <span>A2</span>
+                    <span>A3</span>
+                    <span>A4</span>
+                    <span>A5</span>
+                    <span>A6</span>
+                </li>
+                <li><span>A1</span>
+                    <span>A2</span>
+                    <span>A3</span>
+                    <span>A4</span>
+                    <span>A5</span>
+                    <span>A6</span>
+                </li>
+                <li><span>A1</span>
+                    <span>A2</span>
+                    <span>A3</span>
+                    <span>A4</span>
+                    <span>A5</span>
+                    <span>A6</span>
+                </li>
+                <li><span>A1</span>
+                    <span>A2</span>
+                    <span>A3</span>
+                    <span>A4</span>
+                    <span>A5</span>
+                    <span class="select">A6</span>
+                </li>
+                <li><span class="sell">A1</span>
+                    <span>A2</span>
+                    <span>A3</span>
+                    <span>A4</span>
+                    <span>A5</span>
+                    <span>A6</span>
+                </li>
+            </ul>
+        </div>
+        <ul class="foot">
+            <li>可选座位</li>
+            <li>已选座位</li>
+            <li>已售座位</li>
+        </ul>
+    </header>
+    <main id="main">
+        <div class="name">
+            <h4 class="title">哥斯拉大战金刚</h4>
+        </div>
+        <div class="cinema">
+            <p class="address"><span>太平洋影城（北欧知识城店）</span></p>
+            <p class="session"><span>2022-05-04 星期三 14:00</span></p>
+        </div>
+        <div class="ticket">
+            <div>
+                <span>F1</span><span>F1</span><span>F1</span><span>F1</span><span>F1</span>
+            </div>
+            <p class="totals">￥<span>190.00</span></p>
+        </div>
+        <div class="verify">
+            <button>立即购票</button>
+        </div>
+    </main>
+    <script>
+        if (!isMobile()) {
+            location.href = '../../PC端/html/selectseat.html'
+        }
+    </script>
+</body>
+
+</html>

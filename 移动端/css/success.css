@@ -1,0 +1,172 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding-bottom: .4rem;
+  background-color: #0b193e;
+}
+
+header h6 {
+  font-size: .5rem;
+}
+
+main {
+  padding: 0 .5rem;
+}
+
+main .infilm,
+main .details,
+main .code div {
+  display: flex;
+  align-items: center;
+}
+
+main .film {
+  position: relative;
+  padding: 0 .4rem .4rem;
+  background-size: 100% 100%;
+  background-color: #fff;
+  border-radius: .2rem;
+}
+
+main .film::before, main .film::after {
+  content: '';
+  position: absolute;
+  top: 37%;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background-color: #0b193e;
+}
+
+main .film::before {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+main .film::after {
+  right: 0;
+  transform: translateX(50%);
+}
+
+main .film .movie {
+  margin-left: -0.4rem;
+  padding: .4rem .4rem .6rem;
+  display: flex;
+  width: 100vw;
+  border-bottom: .02rem dashed #000;
+  box-shadow: 0 0rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+main .film .movie img {
+  width: 1.5rem;
+  height: 2.8rem;
+  border-radius: .3rem;
+}
+
+main .film .movie > div {
+  margin-left: .2rem;
+  color: #000;
+  font-size: .32rem;
+}
+
+main .film .movie > div .order {
+  margin-top: .44rem;
+  color: #4073ff;
+}
+
+main .film .movie > div h5 {
+  width: 4rem;
+  margin: .2rem 0;
+  height: .6rem;
+  line-height: .6rem;
+  font-size: .4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .film .movie > div p {
+  width: 4rem;
+  height: .5rem;
+  line-height: .5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .film .movie > div .cinema {
+  color: #999;
+}
+
+main .film .details {
+  justify-content: space-between;
+  height: 3rem;
+}
+
+main .film .details h6 {
+  font-size: .3rem;
+  margin-bottom: .4rem;
+}
+
+main .film .details p {
+  margin: .2rem 0;
+  font-size: .26rem;
+}
+
+main .film .details .seat {
+  margin-top: .2rem;
+}
+
+main .film .details .seats span {
+  margin-right: .1rem;
+  display: inline-block;
+  color: white;
+  font-size: .2rem;
+  background-color: #4074ff;
+  border-radius: .1rem;
+  width: .5rem;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+}
+
+main .film .code h6 {
+  font-size: .45rem;
+}
+
+main .film .code div {
+  justify-content: space-between;
+}
+
+main .film .code div p {
+  margin: .2rem 0;
+  width: 2rem;
+  font-size: .26rem;
+}
+
+main .film .code div .code-p {
+  text-align: center;
+}
+
+main .film .code div:nth-child(1) p {
+  font-weight: 700;
+}
+
+main .film .code img {
+  height: 1.4rem;
+}
+
+main button {
+  margin-top: .8rem;
+  width: 100%;
+  height: 1rem;
+  background-color: #4074ff;
+  border-radius: .2rem;
+  font-weight: bold;
+  font-size: .35rem;
+  color: white;
+}

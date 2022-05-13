@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+    <title>影片详情</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="../css/toPay.min.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/getData.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/topay.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <button class="back"></button>
+        <h6>确认订单</h6>
+        <div class="movie">
+            <img src="../images/gsljg.png">
+            <div>
+                <p class="order">订单号:72132342241</p>
+                <h5 class="title">哥斯拉大战金刚</h5>
+                <p class="cinema"><span>成都双楠电影城</span>•英文 2D</p>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="seat-msg">
+            <div class="time">
+                <div><i>观影日期</i><span>2022-05-12 星期四</span></div>
+                <div><i>时间</i><span>19:00</span></div>
+            </div>
+            <div class="seat">
+                <div><i>座位</i>
+                    <p><span>F4</span><span>F5</span><span>F6</span><span>F5</span><span>F6</span></p>
+                </div>
+                <div><i>座位总数</i><span class="count">3</span></div>
+            </div>
+            <div class="price">
+                <div><i>总价</i><span>￥120.00</span></div>
+                <div><i>服务费</i><span>￥3.00</span></div>
+            </div>
+            <div class="discounts">
+                <div><i>优惠</i><span>-￥0.00</span></div>
+            </div>
+        </div>
+        <div class="topay">
+            <p>总计<span>￥123.00</span></p>
+            <button>去支付</button>
+        </div>
+    </main>
+    <div id="pay">
+        <div>
+            <p class="exitpay"><i></i><span>支付</span><i>退出支付</i></p>
+            <img src="../images/card.png" alt="">
+            <p class="price">总计<span>￥123.00</span></p>
+            <button>立即支付</button>
+        </div>
+    </div>
+</body>
+
+</html>

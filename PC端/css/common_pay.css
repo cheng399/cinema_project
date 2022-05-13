@@ -1,0 +1,85 @@
+@charset "UTF-8";
+#main .header {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .header div {
+  position: relative;
+  width: 917px;
+  height: 4px;
+  background-color: #ffbb7f;
+}
+
+#main .header div::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: #f99135;
+}
+
+#main .header div span {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ffbb7f;
+}
+
+#main .header div span::after {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: #999;
+}
+
+#main .header div span:nth-child(1) {
+  left: 0;
+}
+
+#main .header div span:nth-child(1)::after {
+  content: '选择影片场次';
+  color: #ffbb7f;
+}
+
+#main .header div span:nth-child(2) {
+  left: 33%;
+}
+
+#main .header div span:nth-child(2)::after {
+  content: '选择座位';
+  color: #ffbb7f;
+}
+
+#main .header div span:nth-child(3) {
+  left: 66%;
+}
+
+#main .header div span:nth-child(3)::after {
+  content: '14分钟内付款';
+}
+
+#main .header div span:nth-child(4) {
+  left: 100%;
+}
+
+#main .header div span:nth-child(4)::after {
+  content: '影院取票观影';
+}
+
+#main .header div span:nth-child(-n+2) {
+  background-color: #f99135;
+}

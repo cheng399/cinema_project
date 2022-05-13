@@ -1,0 +1,164 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding-bottom: .4rem;
+    background-color: #0b193e;
+}
+
+// 头部
+header {
+    h6 {
+        font-size: .5rem;
+    }
+}
+
+// 主体
+main {
+    padding: 0 .5rem;
+    // 公共样式
+    .infilm,
+    .details,
+    .code div {
+        display: flex;
+        align-items: center;
+    }
+    .film {
+        position: relative;
+        padding: 0 .4rem .4rem;
+        background-size: 100% 100%;
+        background-color: #fff;
+        border-radius: .2rem;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 37%;
+            width: .6rem;
+            height: .6rem;
+            border-radius: 50%;
+            background-color: #0b193e;
+        }
+        &::before {
+            left: 0;
+            transform: translateX(-50%);
+        }
+        &::after {
+            right: 0;
+            transform: translateX(50%);
+        }
+        .movie {
+            margin-left: -0.4rem;
+            padding: .4rem .4rem .6rem;
+            display: flex;
+            width: 100vw;
+            border-bottom: .02rem dashed #000;
+            box-shadow: 0 0rem .4rem 0rem rgba(0, 0, 0, .2);
+            img {
+                width: 1.5rem;
+                height: 2.8rem;
+                border-radius: .3rem;
+            }
+            >div {
+                margin-left: .2rem;
+                color: #000;
+                font-size: .32rem;
+                .order {
+                    margin-top: .44rem;
+                    color: #4073ff;
+                }
+                h5 {
+                    width: 4rem;
+                    margin: .2rem 0;
+                    height: .6rem;
+                    line-height: .6rem;
+                    font-size: .4rem;
+                    // 文本不换行
+                    white-space: nowrap;
+                    // 溢出隐藏
+                    overflow: hidden;
+                    // 溢出省略号显示
+                    text-overflow: ellipsis;
+                }
+                p {
+                    width: 4rem;
+                    height: .5rem;
+                    line-height: .5rem;
+                    // 文本不换行
+                    white-space: nowrap;
+                    // 溢出隐藏
+                    overflow: hidden;
+                    // 溢出省略号显示
+                    text-overflow: ellipsis;
+                }
+                .cinema {
+                    color: #999;
+                }
+            }
+        }
+        .details {
+            justify-content: space-between;
+            height: 3rem;
+            h6 {
+                font-size: .3rem;
+                margin-bottom: .4rem;
+            }
+            p {
+                margin: .2rem 0;
+                font-size: .26rem;
+            }
+            .seat {
+                margin-top: .2rem;
+            }
+            .seats {
+                span {
+                    margin-right: .1rem;
+                    display: inline-block;
+                    color: white;
+                    font-size: .2rem;
+                    background-color: #4074ff;
+                    border-radius: .1rem;
+                    width: .5rem;
+                    height: .5rem;
+                    line-height: .5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .code {
+            h6 {
+                font-size: .45rem;
+            }
+            div {
+                justify-content: space-between;
+                p {
+                    margin: .2rem 0;
+                    width: 2rem;
+                    font-size: .26rem;
+                }
+                .code-p {
+                    text-align: center;
+                }
+                &:nth-child(1) p {
+                    font-weight: 700;
+                }
+            }
+            img {
+                height: 1.4rem;
+            }
+        }
+    }
+    button {
+        margin-top: .8rem;
+        width: 100%;
+        height: 1rem;
+        background-color: #4074ff;
+        border-radius: .2rem;
+        font-weight: bold;
+        font-size: .35rem;
+        color: white;
+    }
+}

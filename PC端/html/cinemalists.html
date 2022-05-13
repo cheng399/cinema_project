@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="../css/cinemalists.min.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/getData.js"></script>
+    <script src="../../js/register.js"></script>
+    <script src="../../js/login.js"></script>
+    <script src="../js/comment.js"></script>
+    <script src="../js/cinemalists.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="h-top">
+            <div class="w">
+                <a class="fl">下载APP</a>
+                <p class="fr">
+                    <a data-id="0" class="loginbtn">登录</a>
+                    <a class="exit">退出登录</a><span>|</span><a data-id="1">注册</a>
+                </p>
+            </div>
+            <!-- 登录注册模块开始 -->
+            <!-- 默认隐藏登录/注册框 -->
+            <div class="shade" style="display: none;">
+                <div>
+                    <span class="close">×</span>
+                    <div class="shade_content">
+                        <div class="content_head">
+                            <!-- 切换active类 -->
+                            <span class="active">登录</span>
+                            <span>注册</span>
+                        </div>
+                        <div class="content_main">
+                            <!-- 登录模块 -->
+                            <div class="login">
+                                <form action="#/">
+                                    <input type="text" placeholder="请输入用户名" name="userName" maxlength="16">
+                                    <p class="user-msg"></p>
+                                    <input type="password" name="userPass" placeholder="请输入密码" maxlength="16">
+                                    <p class="pass-msg"></p>
+                                    <button>登录</button>
+                                    <p class="item-box"><input type="checkbox" checked="checked">下次自动登录<a class="fr">忘记密码?</a></p>
+                                    <p class="item-box agree"><input type="checkbox">已阅读并同意<a>《服务设计启发线上工具服务协议》</a></p>
+                                </form>
+                            </div>
+                            <!-- 注册模块 默认隐藏-->
+                            <div class="register" style="display: none;">
+                                <form action="#/">
+                                    <input type="text" placeholder="请输入用户名" name="registerUser" maxlength="16">
+                                    <p class="user-msg"></p>
+                                    <input type="password" name="registerPass" placeholder="请输入密码" maxlength="16">
+                                    <p class="pass-msg"></p>
+                                    <input type="password" name="conPass" placeholder="请确认密码" maxlength="16">
+                                    <p class="conpass-msg"></p>
+                                    <button>立即注册</button>
+                                </form>
+                                <a class="fr">立即登录</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 登录注册模块结束 -->
+        </div>
+        <div class="h-bottom w">
+            <div>
+                <h1 class="fl">
+                    <a href="../index.html"></a><select>
+                        <option>全国</option>
+                    </select>
+                </h1>
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./film.html">影片</a></li>
+                    <li class="active"><a href="./cinemalists.html">影城</a></li>
+                    <li><a href="./cinemamessage.html">影城咨询</a></li>
+                    <li><a href="./personalCenter.html">会员中心</a></li>
+                </ul>
+                <div class="fr"><input type="text" placeholder="佩琪 白蛇2 我是猫"><button></button></div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <!-- 影院选择列表 -->
+        <div class="place-select w">
+            <ul class="brand">
+            </ul>
+            <ul class="area">
+            </ul>
+            <ul class="special">
+            </ul>
+            <ul class="serve">
+                <li class="active">全部</li>
+                <li>可改签</li>
+                <li>可退票</li>
+            </ul>
+        </div>
+        <!-- 影院选择列表结束 -->
+
+        <!-- 影院列表  -->
+        <div class="movie-list w">
+            <h4 class="list-top">
+                影院列表<span class="fr">筛选</span>
+            </h4>
+            <ul class="list-middle">
+                <li class="list-item">
+                    <div class="item-left">
+                        <h6>太平洋影城（时代豪廷店）</h6>
+                        <p>地址：郫都区望丛中路1092号时代豪廷广场3楼、4楼</p><span>改签</span><span>折扣卡</span>
+                    </div>
+                    <div class="item-right">
+                        <p><em>￥</em><span>23</span> 起<button>选座购票</button></p>
+                        <i>24km</i>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="item-left">
+                        <h6>太平洋影城（时代豪廷店）</h6>
+                        <p>地址：郫都区望丛中路1092号时代豪廷广场3楼、4楼</p><span>改签</span><span>折扣卡</span>
+                    </div>
+                    <div class="item-right">
+                        <p><em>￥</em><span>23</span> 起<button>选座购票</button></p>
+                        <i>24km</i>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="item-left">
+                        <h6>太平洋影城（时代豪廷店）</h6>
+                        <p>地址：郫都区望丛中路1092号时代豪廷广场3楼、4楼</p><span>改签</span><span>折扣卡</span>
+                    </div>
+                    <div class="item-right">
+                        <p><em>￥</em><span>23</span> 起<button>选座购票</button></p>
+                        <i>24km</i>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="item-left">
+                        <h6>太平洋影城（时代豪廷店）</h6>
+                        <p>地址：郫都区望丛中路1092号时代豪廷广场3楼、4楼</p><span>改签</span><span>折扣卡</span>
+                    </div>
+                    <div class="item-right">
+                        <p><em>￥</em><span>23</span> 起<button>选座购票</button></p>
+                        <i>24km</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="list-foot">
+            <span class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>...</span><span>23</span><span>下一页</span>
+        </div>
+        </div>
+        <!-- 影院列表结束 -->
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="f-top w">
+            <dl>
+                <dt>新手上路</dt>
+                <dd><a href="#/">注册登录问题</a></dd>
+                <dd><a href="#/">用户绑定会员卡问题</a></dd>
+                <dd><a href="#/">影票相关问题</a></dd>
+                <dd><a href="#/">票价和支付问题</a></dd>
+                <dd><a href="#/">取票凭证码和取票问题</a></dd>
+            </dl>
+            <dl>
+                <dt>购票指南</dt>
+                <dd><a href="#/">用户购票流程</a></dd>
+                <dd><a href="#/">取票观影指南</a></dd>
+                <dd><a href="#/">会员卡支付相关说明</a></dd>
+                <dd><a href="#/">网银支付相关说明</a></dd>
+            </dl>
+            <dl>
+                <dt>会员权益</dt>
+                <dd><a href="#/">会员订票权益</a></dd>
+                <dd><a href="#/">会员积分权益</a></dd>
+                <dd><a href="#/">入会资格</a></dd>
+                <dd><a href="#/">会员卡折扣说明</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="#/">手机客户端介绍与下载</a></dd>
+                <dd><a href="#/">影片信息查询</a></dd>
+                <dd><a href="#/">手机自助购票</a></dd>
+            </dl>
+        </div>
+        <div class="f-bottom">
+            <p>
+                <a href="#/">公司介绍</a><span>-</span><a href="#/">合作咨询</a><span>-</span><a href="#/">友情链接</a><span>-</span><a href="#/">网站地图</a><span>-</span><a href="#/">站长统计</a><span>-</span><a href="#/">网站声明</a>
+            </p>
+            <p>Copyright &copy; 2021 ed by woniuxy</p>
+        </div>
+    </footer>
+</body>
+
+</html>

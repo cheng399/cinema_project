@@ -1,0 +1,159 @@
+$color:#f99135;
+#main {
+    margin-bottom: 50px;
+    .header {
+        div {
+            &::after {
+                width: 85%;
+            }
+            span:nth-child(3) {
+                background-color: $color;
+                &::after {
+                    color: #ffbb7f;
+                }
+            }
+        }
+    }
+    .content-toPay {
+        // 倒计时
+        .countdown {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            background-color: #fff3f3;
+            padding-left: 30px;
+            height: 120px;
+            img {
+                height: 50px;
+                margin-right: 20px;
+            }
+            span {
+                display: inline-block;
+                padding: 0 5px;
+                font-size: 30px;
+                font-weight: 700;
+                color: red;
+            }
+            p {
+                padding-top: 8px;
+                color: red;
+                font-size: 14px;
+            }
+        }
+        // 影片详情
+        .sessions {
+            margin: 40px 0;
+            p {
+                text-indent: 15px;
+                font-size: 12px;
+                background: url(../images/gth.png) no-repeat;
+                span {
+                    color: #FA9136;
+                }
+            }
+            table {
+                width: 100%;
+                text-align: center;
+                border: 1px solid gainsboro;
+                margin-top: 10px;
+                border-collapse: collapse;
+                tr {
+                    height: 65px;
+                }
+                thead tr {
+                    background-color: #f6f5f5;
+                }
+                .time {
+                    color: #FA9136;
+                }
+            }
+            .seat {
+                position: relative;
+                padding: 10px 0 10px 60px;
+                width: 270px;
+                height: 100%;
+                display: flex;
+                align-content: space-between;
+                flex-wrap: wrap;
+                transform: translateX(50%);
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    content: '4号厅';
+                    font-size: 18px;
+                }
+                li {
+                    padding: 0 15px 0 10px;
+                    min-width: 85px;
+                    text-align: left;
+                    margin: 10px 0;
+                }
+                li:nth-child(even) {
+                    padding-left: 15px;
+                    border-left: 1px solid #aaa;
+                }
+            }
+        }
+        // 支付方式
+        .payment {
+            p {
+                font-size: 18px;
+            }
+            span {
+                display: inline-block;
+                width: 140px;
+                height: 40px;
+                line-height: 40px;
+                text-indent: 60px;
+                font-size: 14px;
+                border: 2px solid #ccc;
+                margin-right: 20px;
+                margin-top: 15px;
+                &:nth-child(2) {
+                    background: url("../images/zfb.png") no-repeat 8px;
+                }
+                &:nth-child(3) {
+                    background: url("../images/wx.png") no-repeat 8px;
+                }
+                &:nth-child(4) {
+                    background: url("../images/yl.png") no-repeat 8px;
+                }
+            }
+            .active {
+                border-color: $color;
+                color: $color;
+            }
+        }
+        // 总金额
+        .pay {
+            margin-top: 50px;
+            p {
+                text-align: right;
+            }
+            i,
+            span {
+                font-weight: 700;
+                font-style: normal;
+                color: #FA9136;
+            }
+            i {
+                font-size: 22px;
+            }
+            span {
+                font-size: 35px;
+            }
+            button {
+                background-color: #FA9136;
+                color: white;
+                width: 180px;
+                height: 40px;
+                border-radius: 50px;
+                margin-top: 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}

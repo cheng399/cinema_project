@@ -1,0 +1,177 @@
+@charset "UTF-8";
+#main {
+  margin-bottom: 50px;
+}
+
+#main .header div::after {
+  width: 85%;
+}
+
+#main .header div span:nth-child(3) {
+  background-color: #f99135;
+}
+
+#main .header div span:nth-child(3)::after {
+  color: #ffbb7f;
+}
+
+#main .content-toPay .countdown {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #fff3f3;
+  padding-left: 30px;
+  height: 120px;
+}
+
+#main .content-toPay .countdown img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+#main .content-toPay .countdown span {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 30px;
+  font-weight: 700;
+  color: red;
+}
+
+#main .content-toPay .countdown p {
+  padding-top: 8px;
+  color: red;
+  font-size: 14px;
+}
+
+#main .content-toPay .sessions {
+  margin: 40px 0;
+}
+
+#main .content-toPay .sessions p {
+  text-indent: 15px;
+  font-size: 12px;
+  background: url(../images/gth.png) no-repeat;
+}
+
+#main .content-toPay .sessions p span {
+  color: #FA9136;
+}
+
+#main .content-toPay .sessions table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid gainsboro;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+#main .content-toPay .sessions table tr {
+  height: 65px;
+}
+
+#main .content-toPay .sessions table thead tr {
+  background-color: #f6f5f5;
+}
+
+#main .content-toPay .sessions table .time {
+  color: #FA9136;
+}
+
+#main .content-toPay .sessions .seat {
+  position: relative;
+  padding: 10px 0 10px 60px;
+  width: 270px;
+  height: 100%;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  transform: translateX(50%);
+}
+
+#main .content-toPay .sessions .seat::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: '4号厅';
+  font-size: 18px;
+}
+
+#main .content-toPay .sessions .seat li {
+  padding: 0 15px 0 10px;
+  min-width: 85px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+#main .content-toPay .sessions .seat li:nth-child(even) {
+  padding-left: 15px;
+  border-left: 1px solid #aaa;
+}
+
+#main .content-toPay .payment p {
+  font-size: 18px;
+}
+
+#main .content-toPay .payment span {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 60px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+#main .content-toPay .payment span:nth-child(2) {
+  background: url("../images/zfb.png") no-repeat 8px;
+}
+
+#main .content-toPay .payment span:nth-child(3) {
+  background: url("../images/wx.png") no-repeat 8px;
+}
+
+#main .content-toPay .payment span:nth-child(4) {
+  background: url("../images/yl.png") no-repeat 8px;
+}
+
+#main .content-toPay .payment .active {
+  border-color: #f99135;
+  color: #f99135;
+}
+
+#main .content-toPay .pay {
+  margin-top: 50px;
+}
+
+#main .content-toPay .pay p {
+  text-align: right;
+}
+
+#main .content-toPay .pay i,
+#main .content-toPay .pay span {
+  font-weight: 700;
+  font-style: normal;
+  color: #FA9136;
+}
+
+#main .content-toPay .pay i {
+  font-size: 22px;
+}
+
+#main .content-toPay .pay span {
+  font-size: 35px;
+}
+
+#main .content-toPay .pay button {
+  background-color: #FA9136;
+  color: white;
+  width: 180px;
+  height: 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

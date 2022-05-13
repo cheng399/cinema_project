@@ -1,0 +1,154 @@
+$color:#FA9136;
+#main {
+    .place-select {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        border: 1px solid #ccc;
+        ul {
+            position: relative;
+            padding: 5px 0 5px 70px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            &:nth-child(-n+3) {
+                border-bottom: 1px dashed #ccc;
+            }
+            &::before {
+                margin-top: 8px;
+                position: absolute;
+                left: 10px;
+                color: #999;
+            }
+            li {
+                margin: 5px 0;
+                border-radius: 5px;
+                padding: 3px 10px;
+                cursor: pointer;
+                transition: all .3s;
+            }
+            .active {
+                color: #fff;
+                background-color: $color;
+            }
+        }
+        .brand::before {
+            content: '品牌:';
+        }
+        .area::before {
+            content: '行政区:';
+        }
+        .special::before {
+            content: '特殊厅:';
+        }
+        .serve::before {
+            content: '服务:';
+        }
+    }
+    .movie-list {
+        min-height: 137px;
+        .list-top {
+            margin: 40px 0 20px;
+            text-indent: 10px;
+            font-size: 18px;
+            border-left: 5px solid orange;
+            span {
+                display: inline-block;
+                background: url(../images/sizer.png) no-repeat;
+                text-indent: 15px;
+                padding-right: 30px;
+                font-size: 16px;
+                color: #ccc;
+                &::before {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .list-middle {
+            .list-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 0;
+                border-bottom: 1px dashed gainsboro;
+                .item-left {
+                    h6 {
+                        font-size: 16px;
+                        height: 20px;
+                        line-height: 20px;
+                        font-weight: 400;
+                    }
+                    p {
+                        height: 30px;
+                        line-height: 30px;
+                        color: #999;
+                        font-size: 14px;
+                    }
+                    span {
+                        margin-right: 10px;
+                        padding: 2px 3px;
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #509fc9;
+                        border-radius: 5px;
+                        border: 1px solid #509fc9;
+                    }
+                }
+                .item-right {
+                    color: #999;
+                    font-size: 12px;
+                    p {
+                        em {
+                            display: inline-block;
+                            color: red;
+                            font-style: normal;
+                        }
+                        span {
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: red;
+                        }
+                        button {
+                            margin-left: 30px;
+                            padding: 0 10px;
+                            height: 30px;
+                            color: white;
+                            border-radius: 15px;
+                            border: 0;
+                            cursor: pointer;
+                        }
+                        .stop {
+                            background-color: #ffbb7f;
+                        }
+                        .select {
+                            background-color: orange;
+                        }
+                    }
+                    i {
+                        margin-left: 10px;
+                        font-size: 12px;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+    .list-foot {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        margin: 30px auto;
+        span {
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .active {
+            color: white;
+            background-color: orange;
+            border: none;
+        }
+    }
+}

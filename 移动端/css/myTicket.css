@@ -1,0 +1,180 @@
+#header {
+  padding-top: 1.6rem;
+}
+
+#header h6 {
+  font-size: .5rem;
+}
+
+#header h6 i {
+  width: .5rem;
+  height: .5rem;
+  margin-right: .3rem;
+  vertical-align: middle;
+  display: inline-block;
+  background: url(../images/home-page.png) no-repeat;
+  background-size: 100%;
+}
+
+#header .tab {
+  margin-top: .4rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: .32rem;
+  background-color: #233052;
+  display: flex;
+}
+
+#header .tab li {
+  width: 50%;
+  border-radius: .3rem;
+}
+
+#header .tab .active {
+  background-color: #fff;
+  color: #000;
+}
+
+#main {
+  padding: .4rem;
+  font-size: .32rem;
+}
+
+#main .tobeused li {
+  margin-bottom: .4rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background-color: #f3b438;
+  border-radius: .3rem;
+}
+
+#main .tobeused li::before, #main .tobeused li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+#main .tobeused li::before {
+  transform: translateX(-50%);
+}
+
+#main .tobeused li::after {
+  right: 0;
+  transform: translateX(50%);
+}
+
+#main .tobeused li div {
+  border-radius: .3rem;
+  padding-left: .4rem;
+  height: 95%;
+  background-color: #0b193f;
+  color: #fff;
+}
+
+#main .tobeused li div h6 {
+  height: 1rem;
+  line-height: 1.2rem;
+  font-size: .28rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .tobeused li div img {
+  position: absolute;
+  width: 1rem;
+  top: .4rem;
+  right: .4rem;
+  border: .06rem solid #fff;
+}
+
+#main .tobeused li div .address {
+  padding-bottom: .48rem;
+  margin-left: -0.4rem;
+  text-indent: .04rem;
+  font-size: .24rem;
+  transform: scale(0.9);
+  color: #ccc;
+  border-bottom: .02rem dashed #ccc;
+}
+
+#main .tobeused li div .address span:first-child {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .tobeused li div .code {
+  padding-right: .3rem;
+  display: flex;
+  justify-content: space-between;
+  height: .8rem;
+  line-height: 1rem;
+}
+
+#main .tobeused li div .code span {
+  font-size: .28rem;
+  color: #f3b438;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+#main .tobeused li div .code a {
+  font-size: .24rem;
+}
+
+#main .allorder > li {
+  margin: .4rem 0;
+  display: flex;
+}
+
+#main .allorder > li img {
+  margin-right: .4rem;
+  width: 2.4rem;
+  border-radius: .2rem;
+}
+
+#main .allorder > li > div {
+  color: #000;
+  font-size: .32rem;
+}
+
+#main .allorder > li > div h5 {
+  width: 4rem;
+  margin: .2rem 0;
+  height: .6rem;
+  line-height: .6rem;
+  font-size: .44rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .allorder > li > div p {
+  width: 4rem;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .32rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main .allorder > li > div p:last-of-type {
+  margin-bottom: .4rem;
+}
+
+#main .allorder > li > div span {
+  text-align: center;
+  color: #46cec9;
+  font-size: .28rem;
+}

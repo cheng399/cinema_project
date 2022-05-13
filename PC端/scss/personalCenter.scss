@@ -1,0 +1,257 @@
+$color:#FA9136;
+#main {
+    margin: 30px 0 60px;
+    .w {
+        display: flex;
+        border: 1px solid #ccc;
+        min-height: 400px;
+        .main_left {
+            width: 200px;
+            background-color: #f3f3f3;
+            p {
+                margin: 45px 0 32px;
+                font-size: 22px;
+                text-align: center;
+                color: #333;
+            }
+            ul {
+                li {
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .active {
+                    background-color: $color;
+                    color: #fff;
+                }
+            }
+        }
+        .main_right {
+            padding-bottom: 150px;
+            flex: 1;
+            >div {
+                padding: 0 38px;
+                >.title {
+                    margin-bottom: 30px;
+                    padding: 30px 0;
+                    font-size: 18px;
+                    color: $color;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+        }
+    }
+    #myOrder {
+        .order {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            .order-top {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 20px;
+                background-color: #eee;
+                p {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    color: #999;
+                }
+                .time {
+                    padding-right: 30px;
+                    color: #333;
+                }
+                .delete {
+                    width: 20px;
+                    height: 20px;
+                    background: url(../images/sc.png) no-repeat center;
+                }
+            }
+            .details {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                .movie {
+                    min-width: 350px;
+                    display: flex;
+                    div {
+                        margin-left: 15px;
+                    }
+                    img {
+                        height: 85px;
+                        box-shadow: 0 0 5px 1px #e1e1e1;
+                    }
+                    h6 {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 16px;
+                    }
+                    p {
+                        height: 18px;
+                        line-height: 18px;
+                        color: #999;
+                        font-size: 12px;
+                    }
+                    .seat {
+                        margin-right: 5px;
+                    }
+                    .time {
+                        color: #FA9136;
+                        font-size: 12px;
+                    }
+                }
+                >span {
+                    font-size: 14px;
+                }
+                button {
+                    position: relative;
+                    width: 80px;
+                    height: 30px;
+                    text-align: center;
+                    background-color: #FA9136;
+                    border-radius: 20px;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                }
+                .payed {
+                    top: -10px;
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                    &::before {
+                        content: '付款';
+                        line-height: 30px;
+                        color: white;
+                    }
+                    &::after {
+                        content: '查看详情';
+                        font-size: 14px;
+                        line-height: 90px;
+                    }
+                }
+                .take {
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        content: '取票';
+                        line-height: 30px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    #information {
+        .inf-bottom {
+            display: flex;
+        }
+        .headportrait {
+            width: 260px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 260px;
+                height: 260px;
+            }
+            button {
+                width: 180px;
+                height: 56px;
+                border-radius: 10px;
+            }
+            p {
+                text-align: center;
+                color: #999;
+            }
+        }
+        table {
+            flex: 1;
+            td:first-child {
+                text-align: right;
+            }
+            input[type=text] {
+                width: 250px;
+                height: 30px;
+                text-indent: 10px;
+                border: 2px solid #ccc;
+                &::placeholder {
+                    color: #333;
+                }
+            }
+            label {
+                padding: 0 10px 0 5px;
+                cursor: pointer;
+            }
+            select {
+                height: 30px;
+                outline: none;
+                text-indent: 10px;
+                border: 2px solid #ccc;
+            }
+            select:first-child {
+                width: 100px;
+            }
+            select:last-child {
+                width: 50px;
+            }
+            button {
+                width: 100px;
+                height: 35px;
+                font-size: 16px;
+                background-color: $color;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    .changepass {
+        .eyes {
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                width: 20px;
+            }
+        }
+        td {
+            padding: 10px 0;
+        }
+        td:first-child {
+            text-align: right;
+        }
+        input {
+            height: 30px;
+            text-indent: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100px;
+            height: 35px;
+            font-size: 16px;
+            background-color: $color;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p[class$=msg] {
+            color: #f00;
+            text-indent: 10px;
+            font-size: 12px;
+        }
+    }
+}

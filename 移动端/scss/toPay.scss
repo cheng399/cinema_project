@@ -1,0 +1,190 @@
+body {
+    padding-bottom: 0;
+}
+
+#header {
+    position: relative;
+    padding-bottom: 0;
+    button {
+        width: .5rem;
+        height: .6rem;
+        background: url('../images/arrows.png') no-repeat;
+        background-size: 100%;
+    }
+    h6 {
+        font-size: .44rem;
+    }
+    .movie {
+        position: relative;
+        top: .02rem;
+        margin-top: .4rem;
+        margin-left: -0.4rem;
+        padding: .4rem;
+        display: flex;
+        width: 100vw;
+        background-color: #fff;
+        img {
+            width: 2.4rem;
+            border-radius: .3rem;
+        }
+        >div {
+            margin-left: .2rem;
+            color: #000;
+            font-size: .32rem;
+            .order {
+                margin-top: .6rem;
+                color: #4073ff;
+            }
+            h5 {
+                width: 4rem;
+                margin: .2rem 0;
+                height: .6rem;
+                line-height: .6rem;
+                font-size: .44rem;
+                // 文本不换行
+                white-space: nowrap;
+                // 溢出隐藏
+                overflow: hidden;
+                // 溢出省略号显示
+                text-overflow: ellipsis;
+            }
+            p {
+                width: 4rem;
+                height: .5rem;
+                line-height: .5rem;
+                // 文本不换行
+                white-space: nowrap;
+                // 溢出隐藏
+                overflow: hidden;
+                // 溢出省略号显示
+                text-overflow: ellipsis;
+            }
+            .cinema {
+                color: #999;
+            }
+        }
+    }
+}
+
+#main {
+    border-top: .4rem solid #edf0f9;
+    background-color: #fff;
+    font-size: .32rem;
+    margin-top: .4rem;
+    .seat-msg {
+        padding: .4rem;
+        >div {
+            display: flex;
+            justify-content: space-between;
+            >div {
+                margin-bottom: .6rem;
+                font-weight: 700;
+                display: flex;
+                height: .8rem;
+                justify-content: space-between;
+                flex-direction: column;
+                &:last-child {
+                    width: 2rem;
+                }
+                i {
+                    font-style: normal;
+                }
+            }
+        }
+        .seat>div:first-child {
+            span {
+                margin-top: .1rem;
+                margin-right: .1rem;
+                display: inline-block;
+                width: .5rem;
+                height: .5rem;
+                line-height: .5rem;
+                text-align: center;
+                background-color: #4073ff;
+                border-radius: .1rem;
+                color: #fff;
+                font-weight: 400;
+                font-size: .28rem;
+            }
+        }
+        .discounts span {
+            color: #f00;
+        }
+    }
+    .topay {
+        border-top: .4rem solid #edf0f9;
+        padding: .3rem .4rem 0;
+        p {
+            font-weight: 700;
+            span {
+                float: right;
+            }
+        }
+        button {
+            margin: .4rem 0;
+            width: 100%;
+            height: 1rem;
+            color: #fff;
+            font-size: .4rem;
+            background-color: #4073ff;
+            border-radius: .14rem;
+        }
+    }
+}
+
+#pay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: .32rem;
+    background-color: rgba(0, 0, 0, .3);
+    >div {
+        padding: .4rem .4rem 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+        .exitpay {
+            font-weight: 700;
+            i:first-child {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url('../images/arrows1.png') no-repeat;
+                background-size: 100%;
+            }
+            span {
+                font-size: .36rem;
+            }
+            i:last-child {
+                font-style: normal;
+                float: right;
+            }
+        }
+        img {
+            margin: 20px 0;
+            width: 100%;
+        }
+        .price {
+            font-weight: 700;
+            span {
+                float: right;
+            }
+        }
+    }
+    button {
+        margin: .4rem 0;
+        width: 100%;
+        height: 1rem;
+        color: #fff;
+        font-size: .4rem;
+        background-color: #4073ff;
+        border-radius: .14rem;
+    }
+}

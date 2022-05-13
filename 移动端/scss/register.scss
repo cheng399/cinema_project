@@ -1,0 +1,55 @@
+#header {
+    button {
+        width: .5rem;
+        height: .6rem;
+        background: url(../images/arrows.png) no-repeat;
+        background-size: 100%;
+    }
+    h6 {
+        font-size: .5rem;
+    }
+}
+
+.register {
+    font-size: .26rem;
+    padding: .4rem;
+    input {
+        margin: .3rem 0 0;
+        width: 100%;
+        height: 1rem;
+        border: .02rem solid #ddd;
+        border-radius: .1rem;
+        text-indent: 1em;
+        color: #666;
+        &::placeholder {
+            font-size: .26rem;
+        }
+    }
+    .eyes {
+        position: relative;
+        img {
+            position: absolute;
+            top: 43%;
+            right: .1rem;
+            transform: translateY(-50%);
+            width: .6rem;
+        }
+    }
+    p[class$=msg] {
+        height: .55rem;
+        line-height: .6rem;
+        color: #f00;
+        font-size: .25rem;
+    }
+    button {
+        margin-top: .2rem;
+        width: 100%;
+        height: 1rem;
+        color: #fff;
+        font-size: .32rem;
+        font-weight: 700;
+        background-color: #4073ff;
+        border-radius: .1rem;
+        cursor: pointer;
+    }
+}
